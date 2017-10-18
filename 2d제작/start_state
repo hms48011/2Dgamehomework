@@ -1,0 +1,14 @@
+name = "Start State"
+image = None
+logo_time = 0.0
+def enter():
+    global image
+    open canvas()
+    image = load_image('kpu_credit.png')
+
+def exit():
+    global image
+    del(image)
+    close_canvas()
+
+    
